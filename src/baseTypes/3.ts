@@ -1,6 +1,8 @@
-let some: string; // з any теж би запрацювало, але втратило б безпечність 
-some = 'Text';
+let some: unknown; // з any теж би запрацювало, але втратило б безпечність
+some = "Text";
 let str: string;
-str = some;
+if (typeof some === "string") {
+  str = some;
+}
 
 export {};

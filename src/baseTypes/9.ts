@@ -7,8 +7,9 @@ type Page = {
   accounts: string[];
   status: "open" | "close";
   details?: {
-    [key: string]: object,
-  }
+    createAt: Date;
+    updateAt: Date;
+  };
 };
 
 const page1: Page = {

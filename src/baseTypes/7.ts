@@ -14,13 +14,7 @@ enum Days {
   SUN = 'нд'
 }
 
-const isWeekend = (day: Days): boolean => {
-  if (day === Days.SAT || day === Days.SUN) {
-    return true;
-  }
-
-  return false;
-}
+const isWeekend = (day: Days): boolean => day === Days.SAT || day === Days.SUN;
 
 // 2 варіант
 enum WorkingDays {
