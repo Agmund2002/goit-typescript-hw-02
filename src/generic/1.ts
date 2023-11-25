@@ -3,9 +3,9 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-function getPromise () {
+function getPromise (): Promise<Array<string | number>> {  //або ж Promise<[string, number]> лише для 2 елементів масиву
   return new Promise((resolve) => {
-    resolve(['Text', 50]);
+    resolve(["Text", 50]);
   });
 }
 
